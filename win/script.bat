@@ -1,4 +1,4 @@
-qmake jentos_ide.pro -r -spec win32-g++
+qmake jentos_ide.pro -r -spec win32-msvc2013
 jom
 jom clean
 windeployqt --release .\release\JentosIDE.exe
