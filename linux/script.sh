@@ -1,3 +1,4 @@
+#!/bin/bash
 cd build
 qmake -makefile -o Makefile ../jentos_ide.pro -r -spec linux-g++-32
 make

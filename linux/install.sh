@@ -10,7 +10,7 @@ sudo apt-get install -y libglu1-mesa-dev
 sudo apt-get install unzip
 cd dependencies
 unzip -qq qt-everywhere-opensource-src-5.3.2.zip
-cd qt-everywhere-opensource-src-5.3.0
+cd qt-everywhere-opensource-src-5.3.2
 chmod +x configure
 ./configure -release -opensource -confirm-license -fast -system-zlib -qt-libtiff -qt-libpng -qt-libjpeg -nomake demos -nomake examples -platform linux-g++-32
 make
@@ -20,10 +20,10 @@ cd ..
 cd ..
 # --- Additional --- #
 cd /usr/local
-mkdir linuxdeployqt
+sudo mkdir linuxdeployqt
 cd linuxdeployqt
-wget https://raw.githubusercontent.com/malublu/linuxdeployqt/master/linuxdeployqt -O linuxdeployqt
-chmod +x linuxdeployqt
+sudo curl -L -o linuxdeployqt https://raw.githubusercontent.com/malublu/linuxdeployqt/master/linuxdeployqt
+sudo chmod +x linuxdeployqt
 export PATH=/usr/local/linuxdeployqt:$PATH
 sudo apt-get install sshpass zip
 cd "$builddir"
