@@ -6,5 +6,5 @@ set PATH=%PATH%;%MINGWDIR%;%QTBINDIR%
 mkdir dependencies
 mkdir build
 cd dependencies
-curl -O http://download.qt.io/official_releases/jom/jom.zip
+curl -o jom.zip http://download.qt.io/official_releases/jom/jom.zip
 cd %builddir%
