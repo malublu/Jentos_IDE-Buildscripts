@@ -1,5 +1,5 @@
 cd build
-qmake -makefile -o Makefile ../jentos_ide.pro -r -platform macx-clang-32
+qmake -makefile -o Makefile ../jentos_ide.pro -r -platform macx-clang
 make
 make clean
 macdeployqt JentosIDE

@@ -1,6 +1,6 @@
 #!/bin/bash
 cd build
-qmake -makefile -o Makefile ../jentos_ide.pro -r -spec linux-g++-32
+qmake -makefile -o Makefile ../jentos_ide.pro -r -spec linux-g++
 make
 make clean
 /usr/local/linuxdeployqt/linuxdeployqt JentosIDE
