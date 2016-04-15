@@ -1,7 +1,7 @@
 #!/bin/bash
 # --- QT --- #
-sudo apt-get install qt5-default libqt5webkit5-dev qtdeclarative5-dev sshpass zip
-sudo apt-get install gcc-multilib g++-multilib
+sudo apt-get install -y qt5-default libqt5webkit5-dev qtdeclarative5-dev sshpass zip
+sudo apt-get install -y gcc-multilib g++-multilib
 sudo apt-get install -f
 # --- Additional --- #
 cd /usr/local
