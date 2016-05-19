@@ -1,7 +1,7 @@
-qmake jentos_ide.pro -r -spec win32-msvc2013
+qmake jentos.code.pro -r -spec win32-msvc2013
 C:\jom\jom.exe
 C:\jom\jom.exe clean
-windeployqt --release .\release\JentosIDE.exe
+windeployqt --release .\release\Jentos.Code.exe
 copy %QTBINDIR%\libwinpthread-1.dll .\release /y
 copy "%QTBINDIR%\libstdc++-6.dll" .\release /y
 rename release build
